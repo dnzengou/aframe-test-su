@@ -2,32 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>AR VR - A-Frame</title>
-    <meta name="description" content="Hello, World! - A-Frame">
+    <title>AR VR SU test - A-Frame</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AR VR SU test - A-Frame">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
-        <a-box position="-1.5 1 -1.5" rotation="0 0 0" color="cyan"></a-box>
-        <a-sphere position="0 1.25 -3" radius="1.25" color="pink"></a-sphere>
-        <a-cylinder position="2 0.75 -2" radius="0.5" height="1.5" color="#FFC650"></a-cylinder>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="8" height="8" color="#7BC8A4"></a-plane>
+        <a-assets>
+          <a-asset-item id="#model" src=""></a-asset-item>
+        </a-assets>
+        <a-box position="-1.5 1 -1.5" rotation="0 0 0" color="pink"></a-box>
+        <a-sphere position="0 1.25 -3" radius="1.25" color="#FFC650"></a-sphere>
+        <a-cylinder position="2 0.75 -2" radius="0.5" height="1.5" color="#7BC8A4"></a-cylinder>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="8" height="8" color="cyan"></a-plane>
         
-        <!--<a-sky src="https://www.flickr.com/photos/kissmy/51877215174/in/photolist-2n3dhGo-2mX3hAd-28VFvfh-2n2gYmj-xfKH1b-DsCq7h-xDGmcH-q3Jqt5-bCMJr6-bDjJDc-bpSNXG-bqpQEL-bzEHX2-bzEUBR-YYDVse-bDjPGa-bzEJXT-bmKXGs-bmL28h-bDjP6t-bzEM4a-K7tQsr-MeLcv-KJi6bh-bGxmAM-r7dpZf-RWZ2ZZ-2gaWHN5-RZUnBX-2g4vvF5-2enrewv-gpx4yh-29zHR1w-EdBCJs-2bsyMyU-EHozDm-a6asHe-UyoWNB-VkhbsP-Vkgxng-V8xAQe-EsAPvq-U6Ad2K-VePQKW-U99PTq-VePm9N-V6D2CT-23VJJ4x-ELLuyR-poKvZR"></a-sky>-->
-        <a-sky src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Rainbow_on_the_Azores_%E2%80%93_360%C2%B0_drone_shot.jpg/2560px-Rainbow_on_the_Azores_%E2%80%93_360%C2%B0_drone_shot.jpg"></a-sky>
+        <a-sky src="https://st3.depositphotos.com/20782690/33900/i/600/depositphotos_339005834-stock-photo-empty-white-room-without-furniture.jpg"></a-sky>
+        <!--<a-sky src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Rainbow_on_the_Azores_%E2%80%93_360%C2%B0_drone_shot.jpg/2560px-Rainbow_on_the_Azores_%E2%80%93_360%C2%B0_drone_shot.jpg"></a-sky>-->
+
+        <a-entity position="0 1.5 -1" gltf-model="#model"></a-entity>
     </a-scene>
   </body>
 </html>
-
-
-<!--
-  <body>
-    <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
-  </body>
--->
